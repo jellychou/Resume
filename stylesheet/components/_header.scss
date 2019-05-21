@@ -1,0 +1,44 @@
+.jumbotron-bg {
+    background-image: url("https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+    opacity: 0.8;
+    position: relative;
+}
+
+.jumbotron-bg::before {
+    transition: opacity 3s ease;
+    -moz-transition-delay: 1.25s;
+    -webkit-transition-delay: 1.25s;
+    -ms-transition-delay: 1.25s;
+    transition-delay: 1.25s;
+    content: '';
+    display: block;
+    background-color: gray;
+    height: 650px;
+    left: 0;
+    opacity: 0.65;
+    position: absolute;
+    top: 63px;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.inner {
+    z-index: 2;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    
+    .inner, h1 {
+        font-size: 80px;
+        font-weight: bolder;
+    }
+}
+
+// .fix {
+//     position: fixed
+// }
+
+
+
+
