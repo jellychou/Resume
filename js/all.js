@@ -67,7 +67,7 @@ $(document).ready(function () {
             });
         }
     });
-    $('a').click(function (e) {
+    $('.navbar-nav a').click(function (e) {
         e.preventDefault();
         let anchor = e.target.dataset.anchor;
         $('html, body').animate({
